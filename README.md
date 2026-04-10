@@ -1,4 +1,4 @@
-# Giới thiệu Dự án Law Chatbot (RAG System)
+# Dự án Law Chatbot Đào Quang Thắng 2A202600030
 
 Tài liệu này tổng hợp toàn bộ các bước đã thực hiện và giải thích chi tiết luồng xử lý của hệ thống Chatbot Pháp luật Dân sự.
 
