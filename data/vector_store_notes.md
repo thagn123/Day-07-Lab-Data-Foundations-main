@@ -1,0 +1,1 @@
+Vector stores are databases designed for storing and searching high-dimensional vectors.

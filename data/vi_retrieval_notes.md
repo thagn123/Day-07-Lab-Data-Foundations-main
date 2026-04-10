@@ -1,0 +1,1 @@
+Notes on Vietnamese language retrieval optimization.
