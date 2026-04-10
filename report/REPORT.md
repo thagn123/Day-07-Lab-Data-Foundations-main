@@ -105,12 +105,13 @@ Chạy `ChunkingStrategyComparator().compare()` trên 2-3 tài liệu:
 
 | Thành viên | Strategy | Retrieval Score (/10) | Điểm mạnh | Điểm yếu |
 |-----------|----------|----------------------|-----------|----------|
-| Tôi | | | | |
-| [Tên] | | | | |
-| [Tên] | | | | |
+| Tôi | recursive/fixed_size | 9/10| Cân bằng tốt giữa cấu trúc văn bản và giới hạn kích thước, giúp vector search hiệu quả. | Cần tinh chỉnh kỹ tham số để tránh cắt ngang các ý nhỏ quan trọng. |
+| Phạm Hoàng Kim Liên | recursive | 8/10 | Bảo toàn tối đa ngữ nghĩa của các Điều/Khoản nhờ phân tách tự nhiên. | Kích thước chunk không đồng đều, đôi khi quá dài cho embedding model. |
+| Phạm Hải Đăng | recursive | 8/10 | Giữ được logic phân cấp của văn bản pháp luật, dễ tra cứu theo Điều. | Hiệu suất có thể giảm nếu gặp các Điều luật có nội dung quá ngắn hoặc quá rời rạc. |
 
 **Strategy nào tốt nhất cho domain này? Tại sao?**
 > *Viết 2-3 câu:*
+> Strategy recursive/fixed_size là tốt nhất cho domain này vì nó kết hợp được ưu điểm của cả hai strategy. Strategy recursive giúp giữ cho các đoạn văn bản có ý nghĩa nguyên vẹn nhất có thể trong khi vẫn đảm bảo giới hạn kích thước. Strategy fixed_size giúp đảm bảo giới hạn kích thước của các đoạn văn bản.
 
 ---
 
